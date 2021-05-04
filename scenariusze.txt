@@ -1,0 +1,76 @@
+preconditions:
+user has account as admin
+user is logged in 
+
+#1 TestCase
+step 1: user clicks button 'add new product'
+result: new line at the product table appearce
+step 2: user types new name
+result: the value appearces at the input box
+step 3: user types new price
+result: the value appearces at the input box
+step 4: user types new discount price
+result: the value appearces at the input box
+step 5: user clicks button 'save'
+result: new line at the product table with the provided values appearces
+ 
+
+#2 TestCase
+step 1: user selects product and checks it
+result: selected product is checked
+step 2: user clicks button 'delete checked product'
+result: selected product is deleted
+
+
+#3 TestCast
+step 1: user selects product and checks it
+result: selected product is checked
+step 2: user selects another product and checks it
+result: both selected products are checked
+step 3: user clicks button 'delete checked product'
+result: selected products are deleted
+
+#4 TestCase
+step 1: user clicks button 'edit product'
+result: checked line th the product table is lighted
+step 2: user types new name
+result: the value appearces at the input box
+step 3: user types new price
+result: the value appearces at the input box
+step 4: user types new discount price
+result: the value appearces at the input box
+step 5: user clicks button 'save'
+result: edited line at the product table with the new values appearces
+ 
+
+#5 TestCase
+step 1: user selects product and checks it
+result: selected product is checked
+step 2: user selects another product and checks it
+result: both selected products are checked
+step 3: user clicks button 'edit product'
+result: checked line th the product table is lighted
+step 4: user types new name
+result: the value appearces at the input box
+step 5: user types new price
+result: the value appearces at the input box
+step 6: user types new discount price
+result: the value appearces at the input box
+step 7: user clicks button 'save'
+result: edited lines at the product table with the new values appearce
+
+#6 TestCase
+step 1: user clicks button 'edit product'
+result: checked line th the product table is lighted
+step 3: user types new price
+result: the value appearces at the input box
+step 5: user clicks button 'save'
+result: there is an Error Message and user can not save new price
+
+#7 TestCase
+step 1: user clicks button 'edit product'
+result: checked line th the product table is lighted
+step 3: user types new discount price
+result: the value appearces at the input box
+step 5: user clicks button 'save'
+result: there is an Error Message and user can not save new price
